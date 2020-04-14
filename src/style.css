@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato';
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+header {
+  height: 70px;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: stretch;
+  background-image: url('./Images/geometry.png');
+  height: 92vh;
+}
+
+.form {
+  padding: 0px 20px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.article,
+.aside {
+  display: flex;
+  margin: 80px 100px 0;
+  width: 100%;
+}
+
+.article {
+  align-self: flex-start;
+  justify-content: flex-end;
+}
+
+.aside {
+  height: 550px;
+  align-items: center;
+}
+
+.aside > div {
+  width: 600px;
+}
+
+.input-container {
+  width: 100%;
+  padding: 15px 0;
+}
+
+.input-container > * {
+  width: 100%;
+}
+
+.flex-input-container {
+  display: flex;
+}
+
+.flex-input-container > .input-container:first-child {
+  margin-right: 16px;
+}
+
+.flex-input-container > .input-container:last-child {
+  margin-left: 16px;
+}
+
+.form-control {
+  border: none;
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 6px 10px;
+  font-size: 18px;
+  line-height: 25px;
+  background: transparent;
+}
+
+input[placeholder] {
+  font-size: 15px;
+}
+
+select {
+  display: relative;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+label {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.button-container {
+  margin-top: 15px;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.swap-header {
+  display: flex;
+}
+
+.left,
+.right {
+  width: 50%;
+  font-family: 'Roboto';
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  color: black;
+  font-size: 18px;
+}
+
+.result {
+  height: 400px
+}
+
+.info {
+  text-align: center;
+  font-size: 22px;
+  padding: 20px 0 30px;
+}
+
+.result-header {
+  color: red;
+  font-size: larger;
+  font-family: 'Roboto';
+  text-align: center;
+  padding: 20px 0 0;
+}
+
+.list-container {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.list-container li {
+  padding: 15px 40px;
+}
+
+.list-container li img {
+  margin-left: 10px;
+}
+
+.list-container p {
+  text-align: center;
+}
